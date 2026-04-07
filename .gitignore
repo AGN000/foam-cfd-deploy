@@ -1,0 +1,8 @@
+checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+.env
+server.log
+test_results.log
+/foam_cases/

@@ -1,0 +1,52 @@
+# ── PyTorch (CUDA 12.4) ───────────────────────────────────────────────────────
+# Install with the correct index URL for your CUDA version:
+#   CUDA 12.1:  pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   CUDA 12.4:  pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.5.0
+torchvision
+torchaudio
+
+# ── Core LLM inference ────────────────────────────────────────────────────────
+vllm==0.6.6
+transformers>=4.46.0
+accelerate>=0.33.0
+peft>=0.12.0
+huggingface_hub>=0.24.0
+hf_transfer>=0.1.4          # fast parallel downloads (recommended for 62 GB model)
+
+# ── Training (QLoRA with Unsloth) — skip if only running inference ────────────
+# Unsloth must be installed separately with the correct CUDA + GPU suffix:
+#   pip install "unsloth[cu124-ampere-torch230] @ git+https://github.com/unslothai/unsloth.git"
+#   cu121 → CUDA 12.1  |  cu124 → CUDA 12.4
+#   ampere → A100/H100 |  volta → V100
+trl>=0.11.0
+datasets>=2.20.0
+bitsandbytes>=0.43.0
+pyyaml>=6.0
+
+# ── API server ────────────────────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+
+# ── Mesh generation ───────────────────────────────────────────────────────────
+gmsh>=4.12.0
+meshio>=5.3.0
+
+# ── CFD post-processing & visualisation ──────────────────────────────────────
+pyvista>=0.43.0
+vtk>=9.3.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+scipy>=1.12.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+requests>=2.31.0
+wandb>=0.17.0               # optional — remove if not using W&B tracking
+
+# ── External tools (NOT installable via pip) ──────────────────────────────────
+# OpenFOAM 11 (required for Phase 2 simulation):
+#   wget -q -O - https://dl.openfoam.org/gpg.key | sudo apt-key add -
+#   sudo add-apt-repository "deb http://dl.openfoam.org/ubuntu focal main"
+#   sudo apt-get update && sudo apt-get install -y openfoam11
+#   source /opt/openfoam11/etc/bashrc   # add to ~/.bashrc for permanent setup
