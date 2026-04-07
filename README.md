@@ -52,7 +52,14 @@ snapshot_download(
 "
 ```
 
-### 3. Install OpenFOAM 11
+### 3. Install system dependencies
+
+```bash
+# Required by gmsh on headless servers
+sudo apt-get install -y libglu1-mesa libgl1-mesa-glx
+```
+
+### 4. Install OpenFOAM 11
 
 ```bash
 wget -q -O - https://dl.openfoam.org/gpg.key | sudo apt-key add -
@@ -61,7 +68,7 @@ sudo apt-get update && sudo apt-get install -y openfoam11
 source /opt/openfoam11/etc/bashrc
 ```
 
-### 4. Build the RAG index (run once)
+### 5. Build the RAG index (run once)
 
 ```bash
 python3 -m rag.build_index

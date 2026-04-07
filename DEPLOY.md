@@ -15,7 +15,14 @@ OpenFOAM BC file generation, and boundary-condition JSON patches.
 
 ---
 
-## 1. Install Python dependencies
+## 1. Install system dependencies
+
+```bash
+# Required by gmsh on headless/server installs
+sudo apt-get install -y libglu1-mesa libgl1-mesa-glx
+```
+
+## 2. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
