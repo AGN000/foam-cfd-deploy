@@ -1,7 +1,7 @@
 # foam-cfd-deploy
 
 Minimal deployment package for the **foam-cfd-unified-7b** model.
-Clone this repo, download the model, and run CFD simulations from plain-English prompts.
+Clone this repo, download the model, and run CFD simulations from plain-English prompts. This is in the development phase. To convert this into a powerful tool, I need a variety of OpenFOAM examples. If you are interested in sharing a variety of test cases, please contact me at arungovindneelan@gmail.com.
 
 **Model:** [`arungovindneelan/foam-cfd-unified-7b`](https://huggingface.co/arungovindneelan/foam-cfd-unified-7b)
 
