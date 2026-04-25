@@ -1,0 +1,12 @@
+[
+  {"tag": "ng_pehill",        "prompt": "periodic hill flow, hill height H=1m, channel 9H × 3H, water Re=2800",                          "expected_solver": "simpleFoam"},
+  {"tag": "ng_pehill_breuer", "prompt": "Breuer periodic hill at Re=10595, water, single 9H period",                                       "expected_solver": "simpleFoam"},
+  {"tag": "ng_sbend_water",   "prompt": "S-bend duct flow, half-height 5cm, length 60cm, water, Re=5000",                                  "expected_solver": "simpleFoam"},
+  {"tag": "ng_diffuser_air",  "prompt": "2D planar diffuser, inlet half-height 0.1m length 1m, air Re=20000, kOmegaSST steady",            "expected_solver": "simpleFoam"},
+  {"tag": "ng_sphere_re100",  "prompt": "3D flow over a sphere, diameter 0.1m, Re=100, water steady",                                       "expected_solver": "simpleFoam"},
+  {"tag": "ng_naca4412",      "prompt": "NACA 4412 airfoil at Re=300000, chord 0.3m, AoA=4 degrees, air kOmegaSST",                        "expected_solver": "simpleFoam"},
+  {"tag": "ng_naca2412",      "prompt": "RANS simulation of NACA2412 airfoil, chord 0.5m, Re=1e6, AoA 2 deg, air",                          "expected_solver": "simpleFoam"},
+  {"tag": "ng_pehill_re5600", "prompt": "periodic hill flow Re=5600, water, hill height H=1m",                                              "expected_solver": "simpleFoam"},
+  {"tag": "ng_sbend_air",     "prompt": "U-bend duct, air, half-height 4cm length 50cm Re=15000 turbulent",                                "expected_solver": "simpleFoam"},
+  {"tag": "ng_diffuser_water","prompt": "expanding duct water Re=8000, inlet half-height 5cm, length 50cm",                                "expected_solver": "simpleFoam"}
+]

@@ -1,0 +1,135 @@
+[
+  {"tag": "v2_cav_re150_water",      "prompt": "Cavity flow Re=150 in water, 0.4m square",                                                                  "expected_solver": "simpleFoam"},
+  {"tag": "v2_cav_re3200_water",     "prompt": "lid-driven cavity at Reynolds 3200 water 1m square",                                                        "expected_solver": "simpleFoam"},
+  {"tag": "v2_cav_re600_oil",        "prompt": "engine oil cavity Re=600 0.5m × 0.5m steady laminar",                                                      "expected_solver": "simpleFoam"},
+  {"tag": "v2_cav_re7500_air",       "prompt": "2D lid-driven cavity Re=7500 air 1m square turbulent",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_cav_3d_re400",         "prompt": "3D cubic lid-driven cavity 0.5m × 0.5m × 0.5m Re=400 water",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_pipe_oil_re150",       "prompt": "engine oil pipe flow Re=150 D=8mm L=80mm laminar steady",                                                  "expected_solver": "simpleFoam"},
+  {"tag": "v2_pipe_water_re12000",   "prompt": "Pipe flow water D=4cm L=40cm Re=12000 turbulent kOmegaSST",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_pipe_glycerine_low",   "prompt": "creeping pipe flow glycerine Re=20 D=2cm L=20cm",                                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_pipe_water_lam",       "prompt": "laminar Hagen-Poiseuille pipe water D=10mm L=100mm Re=400",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_pipe_3d_air_re5e4",    "prompt": "3D circular pipe air D=3cm L=30cm Re=50000 turbulent",                                                      "expected_solver": "simpleFoam"},
+  {"tag": "v2_cyl_re30",             "prompt": "Stokes flow over circular cylinder D=10cm Re=30 water",                                                    "expected_solver": "simpleFoam"},
+  {"tag": "v2_cyl_re80",             "prompt": "flow over a 2D cylinder Re=80 D=2cm water",                                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_cyl_re3000_air",       "prompt": "circular cylinder air Re=3000 D=5cm wake simulation steady",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_cyl_re250_unsteady",   "prompt": "vortex shedding cylinder D=2cm Re=250 water transient",                                                     "expected_solver": "pimpleFoam"},
+  {"tag": "v2_cyl_re5000_3d",        "prompt": "3D unsteady cylinder D=5cm Re=5000 water transient kOmegaSST",                                              "expected_solver": "pimpleFoam"},
+  {"tag": "v2_chan_water_re800",     "prompt": "laminar 2D channel water height 4cm length 80cm Re=800",                                                    "expected_solver": "simpleFoam"},
+  {"tag": "v2_chan_water_re12000",   "prompt": "Turbulent 2D channel water Re=12000 height 5cm length 1m kEpsilon",                                         "expected_solver": "simpleFoam"},
+  {"tag": "v2_chan_air_re3500",      "prompt": "channel air Re=3500 height 6cm length 60cm",                                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_chan_3d_water_re2k",   "prompt": "3D channel water height 5cm spanwise 30cm length 60cm Re=2000",                                              "expected_solver": "simpleFoam"},
+  {"tag": "v2_bfs_water_re600",      "prompt": "backward-facing step Re=600 water step 4cm length 30cm",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_bfs_re6000_air",       "prompt": "BFS Re=6000 air step 5cm length 50cm kOmegaSST",                                                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_bfs_re250_oil",        "prompt": "engine oil backward-facing step Re=250 step 3cm laminar",                                                   "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_naca0012_re5e5",       "prompt": "NACA 0012 chord 0.5m Re=500000 air AoA=2 degrees kOmegaSST",                                                 "expected_solver": "simpleFoam"},
+  {"tag": "v2_naca0021_re3e5",       "prompt": "NACA 0021 chord 0.4m Re=300000 air AoA 8 degrees",                                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_naca4412_re2e5",       "prompt": "NACA 4412 airfoil chord 0.3m Re=200000 air AoA 4 degrees",                                                  "expected_solver": "simpleFoam"},
+  {"tag": "v2_naca2412_re1e6",       "prompt": "RANS simulation of NACA 2412, chord 1m, Re=1e6, AoA 3 degrees, air",                                        "expected_solver": "simpleFoam"},
+  {"tag": "v2_naca0006_re5e5",       "prompt": "thin NACA 0006 chord 0.6m Re=500000 air AoA 0 degrees",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_hydrofoil_re800k",     "prompt": "hydrofoil chord 0.6m Re=800000 water AoA 3 degrees kOmegaSST",                                              "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_wedge_water_re800",    "prompt": "axisymmetric pipe wedge geometry water D=2cm L=20cm Re=800",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_wedge_oil_re150",      "prompt": "wedge engine oil flow Re=150 D=15mm L=15cm laminar",                                                        "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_pehill_re2800",        "prompt": "periodic hill flow Re=2800 water hill height H=1m channel 9H × 3H",                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_pehill_breuer_5e3",    "prompt": "Breuer periodic hill water Re=5000 hill height 1m",                                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_pehill_re10595",       "prompt": "Wu periodic hill flow water Re=10595 standard 9H period",                                                   "expected_solver": "simpleFoam"},
+  {"tag": "v2_pehill_re800",         "prompt": "Mellen hill flow Re=800 water laminar steady",                                                              "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_multihill_3p",         "prompt": "three periodic hills in series water Re=2800",                                                              "expected_solver": "simpleFoam"},
+  {"tag": "v2_multihill_air",        "prompt": "row of hills hill train Re=8000 air, multi-period geometry",                                                "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_sbend_water_re3000",   "prompt": "S-bend duct water half-height 4cm length 50cm Re=3000",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_sbend_air_re15000",    "prompt": "U-bend duct air half-height 4cm length 60cm Re=15000 turbulent",                                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_sbend_water_re800",    "prompt": "S-shaped duct water laminar Re=800 half-height 3cm length 40cm",                                            "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_diff_air_re15000",     "prompt": "planar diffuser inlet half-height 0.1m length 1m air Re=15000 kOmegaSST",                                  "expected_solver": "simpleFoam"},
+  {"tag": "v2_diff_water_re5000",    "prompt": "expanding duct water Re=5000 inlet half-height 5cm length 50cm",                                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_diff_lam_re800",       "prompt": "subsonic diffuser water Re=800 inlet 5cm length 60cm laminar",                                              "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_sphere_re100",         "prompt": "3D flow over a sphere D=10cm Re=100 water steady",                                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_sphere_re500_air",     "prompt": "3D sphere drag Re=500 D=5cm air steady",                                                                    "expected_solver": "simpleFoam"},
+  {"tag": "v2_sphere_re3e4",         "prompt": "ball in water tunnel D=10cm Re=30000 steady kOmegaSST",                                                     "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_ahmed_25",             "prompt": "Ahmed body 25 degrees slant length 1m height 0.288m air Re=1e6",                                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_ahmed_35",             "prompt": "Ahmed reference model 35 degree slant automotive bluff body air freestream 40 m/s",                        "expected_solver": "simpleFoam"},
+  {"tag": "v2_ahmed_30",             "prompt": "Ahmed body wind tunnel slant 30 degrees air kOmegaSST steady",                                              "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_tjunc_water",          "prompt": "T-junction water main half-height 4cm length 60cm branch from midpoint Re=4000",                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_tjunc_water_turb",     "prompt": "branching duct main + branch flow water turbulent Re=10000 half-height 5cm",                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_tjunc_air",            "prompt": "T-piece air half-height 5cm Re=20000 length 80cm",                                                          "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_cdnoz_ma05",           "prompt": "convergent-divergent nozzle subsonic throat 4cm length 50cm air Mach 0.5",                                   "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_cdnoz_ma06",           "prompt": "de Laval nozzle steady ideal gas throat 3cm length 40cm Mach 0.6",                                          "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_cdnoz_ma04",           "prompt": "Laval nozzle low subsonic Mach 0.4 throat 5cm length 60cm air",                                              "expected_solver": "rhoSimpleFoam"},
+
+  {"tag": "v2_elbow_water",          "prompt": "90 degree elbow duct water half-height 5cm leg 30cm Re=8000",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_elbow_air",            "prompt": "right-angle bend duct air Re=15000 leg 40cm half-height 4cm kOmegaSST",                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_elbow_lam",            "prompt": "L-shaped duct water laminar Re=600 half-height 4cm leg 25cm",                                                "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_ico_cav_re400",        "prompt": "transient lid-driven cavity Re=400 water 0.5m square laminar icoFoam",                                       "expected_solver": "icoFoam"},
+  {"tag": "v2_ico_pipe_re800",       "prompt": "transient laminar pipe flow water D=2cm L=20cm Re=800 icoFoam",                                              "expected_solver": "icoFoam"},
+  {"tag": "v2_ico_starting",         "prompt": "impulsively started cavity flow Re=200 1m square laminar transient icoFoam",                                "expected_solver": "icoFoam"},
+  {"tag": "v2_ico_chan_re500",       "prompt": "transient laminar channel water height 4cm length 30cm Re=500 icoFoam",                                      "expected_solver": "icoFoam"},
+
+  {"tag": "v2_pimple_chan_re6000",   "prompt": "URANS channel water Re=6000 height 5cm length 80cm transient pimpleFoam",                                    "expected_solver": "pimpleFoam"},
+  {"tag": "v2_pimple_bfs_re8k",      "prompt": "transient BFS Re=8000 step 4cm water URANS kOmegaSST pimpleFoam",                                            "expected_solver": "pimpleFoam"},
+  {"tag": "v2_pimple_pulsing",       "prompt": "pulsating channel inlet H=6cm L=1m water Re=4000 transient unsteady",                                        "expected_solver": "pimpleFoam"},
+
+  {"tag": "v2_buoy_cav_re_dT80",     "prompt": "natural convection cavity 1m × 1m hot 360K cold 280K air buoyantSimpleFoam steady",                          "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_buoy_room_4m",         "prompt": "indoor heated room 4m × 3m air natural convection turbulent buoyantSimpleFoam",                              "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_buoy_rb_15m",          "prompt": "Rayleigh-Benard convection 1.5m × 1.5m heated bottom 320K cold top 290K air steady",                         "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_buoy_office",          "prompt": "office buoyancy CFD 4m wide 3m tall hot wall 318K cold window 283K turbulent natural convection",            "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_buoy_diff_heat",       "prompt": "differentially heated cavity aspect ratio 2 hot 340K cold 300K air steady kOmega",                            "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_buoy_water_lam",       "prompt": "natural convection water cavity 0.5m × 0.5m hot 320K cold 290K laminar buoyantSimpleFoam",                    "expected_solver": "buoyantSimpleFoam"},
+
+  {"tag": "v2_inter_dam_4x2",        "prompt": "dam break 4m × 2m water column 1m wide 1.5m tall interFoam VOF",                                              "expected_solver": "interFoam"},
+  {"tag": "v2_inter_slosh_2x1",      "prompt": "VOF sloshing of water in 2m × 1m container half-filled gravity",                                              "expected_solver": "interFoam"},
+  {"tag": "v2_inter_wave",           "prompt": "interFoam wave channel 8m long 1.5m deep wave generator at inlet beach",                                      "expected_solver": "interFoam"},
+  {"tag": "v2_inter_dam_3x15",       "prompt": "two-phase water-air dam break domain 3m × 1.5m initial column 0.6m wide 1m tall",                             "expected_solver": "interFoam"},
+  {"tag": "v2_inter_dam_5x3",        "prompt": "large dam break 5m × 3m water column 2m × 2m surface tension 0.072 N/m",                                      "expected_solver": "interFoam"},
+  {"tag": "v2_inter_dam_tall",       "prompt": "tall dam break 2m wide 4m tall domain water column 0.5m × 3m interFoam",                                      "expected_solver": "interFoam"},
+
+  {"tag": "v2_rho_pipe_ma02",        "prompt": "compressible nitrogen pipe D=2cm L=20cm Mach 0.2 steady ideal gas",                                           "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_rho_pipe_ma04",        "prompt": "compressible air pipe Mach 0.4 D=4cm L=40cm steady RANS",                                                    "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_rho_box_ma05",         "prompt": "compressible duct Mach 0.5 box 1m × 0.05m steady rhoSimpleFoam",                                              "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_rho_jet_ma06",         "prompt": "steady compressible turbulent hot air jet 2D 1m × 0.3m Mach 0.6 kOmegaSST",                                   "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_rho_step_ma065",       "prompt": "high-speed flow over 2D backward facing step Mach 0.65 Re=1e5 steady compressible RANS",                      "expected_solver": "rhoSimpleFoam"},
+  {"tag": "v2_rho_pipe_ma03",        "prompt": "compressible pipe air Ma=0.3 D=5cm L=50cm steady rhoSimpleFoam",                                              "expected_solver": "rhoSimpleFoam"},
+
+  {"tag": "v2_rhop_pulsing",         "prompt": "pulsating compressible pipe flow Mach 0.4 D=5cm L=1m time-dependent rhoPimpleFoam",                            "expected_solver": "rhoPimpleFoam"},
+  {"tag": "v2_rhop_box_ma05_trans",  "prompt": "transient compressible duct 2m × 0.1m Mach 0.5 inlet ideal gas time-resolved",                                 "expected_solver": "rhoPimpleFoam"},
+  {"tag": "v2_rhop_unsteady",        "prompt": "unsteady compressible duct Mach 0.45 2D 1.5m × 0.08m transient RANS",                                          "expected_solver": "rhoPimpleFoam"},
+
+  {"tag": "v2_units_cm_pipe",        "prompt": "pipe flow water diameter 5 cm length 50 cm Re=8000 turbulent",                                                 "expected_solver": "simpleFoam"},
+  {"tag": "v2_units_mm_chan",        "prompt": "laminar channel water height 30 mm length 300 mm Re=1200",                                                    "expected_solver": "simpleFoam"},
+  {"tag": "v2_micro_pipe",           "prompt": "microchannel flow water D=200 micrometers L=10 mm Re=20",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_inches_pipe",          "prompt": "pipe flow water D=2 inches L=2 ft Re=3000",                                                                   "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_phrasing_layperson",   "prompt": "I want to simulate water flow inside a square box that is 1 metre on each side, with the top sliding slowly, Reynolds around 100",  "expected_solver": "simpleFoam"},
+  {"tag": "v2_phrasing_terse",       "prompt": "cyl Re=200 D=1cm water 2D",                                                                                   "expected_solver": "simpleFoam"},
+  {"tag": "v2_phrasing_paper",       "prompt": "Direct numerical simulation of two-dimensional cavity at Re=400 with water as working fluid in a 1m square geometry",                "expected_solver": "simpleFoam"},
+  {"tag": "v2_phrasing_problem",     "prompt": "Problem: incompressible viscous flow over a circular cylinder. Re=160. Diameter D=4cm. Working fluid: water.",                       "expected_solver": "simpleFoam"},
+  {"tag": "v2_phrasing_assignment",  "prompt": "Assignment 3: model laminar pipe flow at Re=1500. Use water (kinematic viscosity 1e-6). Pipe is 2cm in diameter and 20cm long.",      "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_explicit_U_pipe",      "prompt": "Pipe water D=4cm L=40cm inlet velocity 0.5 m/s Re=20000",                                                     "expected_solver": "simpleFoam"},
+  {"tag": "v2_explicit_U_chan",      "prompt": "channel water height 5cm length 80cm freestream U=0.3 m/s Re=15000",                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_explicit_U_air",       "prompt": "airfoil NACA 0012 chord 0.4m air freestream 25 m/s AoA 4 deg",                                                "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_seafloor_pipe",        "prompt": "underwater pipeline laminar seawater flow D=10cm L=1m Re=500",                                                "expected_solver": "simpleFoam"},
+  {"tag": "v2_helium_pipe",          "prompt": "helium pipe flow Re=2000 D=3cm L=40cm laminar steady",                                                        "expected_solver": "simpleFoam"},
+  {"tag": "v2_co2_pipe",             "prompt": "carbon dioxide steady pipe Re=1e4 D=2cm L=30cm",                                                              "expected_solver": "simpleFoam"},
+  {"tag": "v2_steam_chan",           "prompt": "steam flow channel H=5cm L=1m Re=8000 turbulent",                                                              "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_re_kshort",            "prompt": "cavity flow Re=10k water 1m square",                                                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_re_million",           "prompt": "airfoil Re=2 million chord 1m air NACA 0012",                                                                 "expected_solver": "simpleFoam"},
+  {"tag": "v2_re_scientific",        "prompt": "pipe water D=2cm L=20cm Re=1.5e4",                                                                            "expected_solver": "simpleFoam"},
+
+  {"tag": "v2_3d_pipe_re5e4",        "prompt": "3D cylindrical pipe water D=3cm L=30cm Re=50000 turbulent kOmegaSST",                                          "expected_solver": "simpleFoam"},
+  {"tag": "v2_3d_chan_re3000",       "prompt": "3D channel air H=4cm spanwise 20cm length 60cm Re=3000",                                                       "expected_solver": "simpleFoam"},
+  {"tag": "v2_3d_box_low",           "prompt": "3D laminar box water 0.2m × 0.05m × 0.05m Re=400",                                                            "expected_solver": "simpleFoam"},
+  {"tag": "v2_3d_dam_break",         "prompt": "3D dam break 4m × 2m × 2m water column 1m wide 1.5m tall surface tension 0.072 N/m interFoam",                  "expected_solver": "interFoam"},
+  {"tag": "v2_3d_room_buoy",         "prompt": "3D natural convection in 4m × 4m × 3m room hot wall 320K cold 290K air buoyantSimpleFoam",                      "expected_solver": "buoyantSimpleFoam"},
+  {"tag": "v2_3d_cyl_unsteady",      "prompt": "3D unsteady cylinder D=5cm Re=300 water spanwise 30cm transient",                                              "expected_solver": "pimpleFoam"}
+]

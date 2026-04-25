@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "ng2_ahmed_25",
+    "prompt": "Ahmed body wind-tunnel simulation, slant angle 25 degrees, freestream 40 m/s air",
+    "expected_solver": "simpleFoam"
+  },
+  {
+    "tag": "ng2_ahmed_35",
+    "prompt": "automotive bluff-body Ahmed reference model, slant angle 35 degrees, air Re=2.8e6",
+    "expected_solver": "simpleFoam"
+  },
+  {
+    "tag": "ng2_tjunc_water",
+    "prompt": "T-junction water flow, main duct half-height 5cm length 60cm, branch perpendicular, Re=5000",
+    "expected_solver": "simpleFoam"
+  },
+  {
+    "tag": "ng2_tjunc_air",
+    "prompt": "branching duct simulation: T-piece air, main 4cm half-height 80cm long, branch 50cm Re=20000 turbulent",
+    "expected_solver": "simpleFoam"
+  },
+  {
+    "tag": "ng2_elbow_water",
+    "prompt": "90 degree elbow water flow, half-height 5cm leg length 20cm, Re=4000",
+    "expected_solver": "simpleFoam"
+  },
+  {
+    "tag": "ng2_elbow_air",
+    "prompt": "right-angle bend duct air, half-height 4cm, leg length 25cm, Re=12000 kOmegaSST",
+    "expected_solver": "simpleFoam"
+  }
+]

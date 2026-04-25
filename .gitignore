@@ -1,8 +1,37 @@
-checkpoints/
+# Heavy artefacts published separately on HuggingFace / on a different repo
+data/checkpoints/
+data/cases/
+data/dataset/
+data/chroma_db/
+data/logs/
+
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Unsloth / xgrammar / vllm caches
+unsloth_compiled_cache/
+.cache/
+.triton/
+
+# Logs and tmp
+*.log
+.coverage
+.pytest_cache/
+
+# Secrets — defensive, in case anyone ever drops one in the tree
 .env
-server.log
-test_results.log
-/foam_cases/
+*.token
+hf_*.txt

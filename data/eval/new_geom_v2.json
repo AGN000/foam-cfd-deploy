@@ -1,0 +1,12 @@
+[
+  {"tag": "ng2_ahmed_25",        "prompt": "Ahmed body wind tunnel simulation, slant angle 25 degrees, length 1m height 0.288m, air Re=1e6",        "expected_solver": "simpleFoam"},
+  {"tag": "ng2_ahmed_35",        "prompt": "Ahmed reference model, slant 35 deg, automotive bluff body in air, freestream 40 m/s",                  "expected_solver": "simpleFoam"},
+  {"tag": "ng2_multihill_3",     "prompt": "three periodic hills in series, water Re=2800, hill height 1m",                                          "expected_solver": "simpleFoam"},
+  {"tag": "ng2_multihill_re5k",  "prompt": "row of hills hill train Re=5600 water, multiple periodic hills",                                        "expected_solver": "simpleFoam"},
+  {"tag": "ng2_tjunc_water",     "prompt": "T-junction water flow, main channel half-height 5cm length 60cm, branch from midpoint, Re=4000",        "expected_solver": "simpleFoam"},
+  {"tag": "ng2_tjunc_branch",    "prompt": "branching duct main + branch flow, water turbulent Re=10000, half-height 4cm",                          "expected_solver": "simpleFoam"},
+  {"tag": "ng2_cdnozzle_lowMa",  "prompt": "convergent-divergent nozzle subsonic, throat 4cm, length 50cm, air, Mach 0.5 inlet",                    "expected_solver": "rhoSimpleFoam"},
+  {"tag": "ng2_cdnozzle_air",    "prompt": "de Laval nozzle steady ideal gas, throat 3cm length 40cm, Mach 0.6, compressible RANS",                "expected_solver": "rhoSimpleFoam"},
+  {"tag": "ng2_elbow_water",     "prompt": "90 degree elbow duct water, half-height 5cm leg length 30cm, Re=8000 turbulent",                        "expected_solver": "simpleFoam"},
+  {"tag": "ng2_elbow_air",       "prompt": "right-angle bend duct air, Re=15000, leg 40cm, half-height 4cm, kOmegaSST",                              "expected_solver": "simpleFoam"}
+]
